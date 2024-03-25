@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Age calculator app</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-1">
+        <h5>DAY</h5>
+        <input type="number" id="day" name="day"/>
+        <span>invalid day</span>
+        <h5>MONTH</h5>
+        <input type="number" id="month" name="month"/>
+        <span>invalid month</span>
+      
+
+        <h5>YEAR</h5>
+        <input type="number" id="year" name="year"/>
+      <span>invalid year</span>
+      </div>
+      <div class="card-2">
+        <hr />
+        <img src="./assets/images/icon-arrow.svg" alt="image" />
+
+        <h3><span>-- -- </span>years</h3>
+        <h3><span>-- --</span> months</h3>
+        <h3><span>-- --</span> days</h3>
+      </div>
+    </div>
+
+    <script src="age.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+hr {
+  display: inline-block;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.card {
+  background-color: hsl(0, 0%, 94%);
+  border-bottom-right-radius: 80px;
+  padding: 30px;
+}
+.card-1 {
+  display: grid;
+  grid-template-areas:
+    "h41 h42 h43"
+    "input-1 input-2 input-3";
+  gap: 10px;
+}
+h5:nth-of-type(1) {
+  grid-area: h41;
+}
+h5:nth-of-type(2) {
+  grid-area: h42;
+}
+h5:nth-of-type(3) {
+  grid-area: h43;
+}
+input:nth-of-type(1) {
+  grid-area: input-1;
+}
+input:nth-of-type(2) {
+  grid-area: input-2;
+}
+input:nth-of-type(3) {
+  grid-area: input-3;
+}
+h5 {
+  color: hsl(0, 1%, 44%);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+input {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px hsl(0, 0%, 86%);
+  font-size: 20px;
+}
+img {
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 39px;
+  font-weight: 800;
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+.card-1 span {
+  color: red;
+  font-size: 10px;
+  position: relative;
+  left: 5px;
+  opacity: 70%;
+  display: none;
+}
+@media (max-width: 450px) {
+  .card {
+    width: 400px;
+  }
+}
+@media (max-width: 280px) {
+  input {
+    width: 40px;
+  }
+  .card {
+    width: 200px;
+  }
+  hr {
+    width: 100px;
+    margin-top: 20px;
+  }
+}
